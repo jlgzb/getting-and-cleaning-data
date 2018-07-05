@@ -43,7 +43,7 @@ read from: ./data/UCI HAR Dataset/test/subject_test.txt
 * creat one dataset -- merges the train and test dataset, dim = (10299, 563)
 * write the generated data to a txt files
 ```
-write to : df_full.txt
+write to : ./data/df_full.txt
 ```
 
 ## Step 2 -- Extracts only the measurements on the mean and standard deviation for each measurement
@@ -57,7 +57,48 @@ read from : ./data/UCI HAR Dataset/features.txt
 * replace the column names of the new data -- use features.txt
 * write the generated data to txt files
 ```
-write to : df_mean_sd.txt
+write to : ./data/df_mean_sd.txt
+```
+
+```
+colnames(df_mean_sd)
+```
+
+```
+ [1] "subject"                     "activity"                   
+ [3] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          
+ [5] "tBodyAcc-mean()-Z"           "tBodyAcc-std()-X"           
+ [7] "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"           
+ [9] "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"       
+[11] "tGravityAcc-mean()-Z"        "tGravityAcc-std()-X"        
+[13] "tGravityAcc-std()-Y"         "tGravityAcc-std()-Z"        
+[15] "tBodyAccJerk-mean()-X"       "tBodyAccJerk-mean()-Y"      
+[17] "tBodyAccJerk-mean()-Z"       "tBodyAccJerk-std()-X"       
+[19] "tBodyAccJerk-std()-Y"        "tBodyAccJerk-std()-Z"       
+[21] "tBodyGyro-mean()-X"          "tBodyGyro-mean()-Y"         
+[23] "tBodyGyro-mean()-Z"          "tBodyGyro-std()-X"          
+[25] "tBodyGyro-std()-Y"           "tBodyGyro-std()-Z"          
+[27] "tBodyGyroJerk-mean()-X"      "tBodyGyroJerk-mean()-Y"     
+[29] "tBodyGyroJerk-mean()-Z"      "tBodyGyroJerk-std()-X"      
+[31] "tBodyGyroJerk-std()-Y"       "tBodyGyroJerk-std()-Z"      
+[33] "tBodyAccMag-mean()"          "tBodyAccMag-std()"          
+[35] "tGravityAccMag-mean()"       "tGravityAccMag-std()"       
+[37] "tBodyAccJerkMag-mean()"      "tBodyAccJerkMag-std()"      
+[39] "tBodyGyroMag-mean()"         "tBodyGyroMag-std()"         
+[41] "tBodyGyroJerkMag-mean()"     "tBodyGyroJerkMag-std()"     
+[43] "fBodyAcc-mean()-X"           "fBodyAcc-mean()-Y"          
+[45] "fBodyAcc-mean()-Z"           "fBodyAcc-std()-X"           
+[47] "fBodyAcc-std()-Y"            "fBodyAcc-std()-Z"           
+[49] "fBodyAccJerk-mean()-X"       "fBodyAccJerk-mean()-Y"      
+[51] "fBodyAccJerk-mean()-Z"       "fBodyAccJerk-std()-X"       
+[53] "fBodyAccJerk-std()-Y"        "fBodyAccJerk-std()-Z"       
+[55] "fBodyGyro-mean()-X"          "fBodyGyro-mean()-Y"         
+[57] "fBodyGyro-mean()-Z"          "fBodyGyro-std()-X"          
+[59] "fBodyGyro-std()-Y"           "fBodyGyro-std()-Z"          
+[61] "fBodyAccMag-mean()"          "fBodyAccMag-std()"          
+[63] "fBodyBodyAccJerkMag-mean()"  "fBodyBodyAccJerkMag-std()"  
+[65] "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
+[67] "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()"
 ```
 
 ## Step 3 -- Uses descriptive activity names to name the activities in the data set
@@ -65,6 +106,7 @@ write to : df_mean_sd.txt
 ```
 read from : ./data/UCI HAR Dataset/activity_labels.txt
 ```
+
 ```
 activity names: 
 1 WALKING
@@ -78,7 +120,7 @@ activity names:
 * replace the activity names of new data geneted by step 2
 * write the generated data to a txt files
 ```
-write to : df_named_activity.txt
+write to : ./data/df_named_activity.txt
 ```
 
 ## Step 4 -- Appropriately labels the data set with descriptive variable names
@@ -90,6 +132,36 @@ write to : df_named_activity.txt
 * write the generated data to a txt file
 ```
 write to : ./data/df_with_descriptive_variable_names.txt
+```
+
+```
+colnames(df_with_descriptive_variable_names)
+```
+
+```
+[1] "subject"                          "activity"                         "timeBodyAccMean-X"               
+ [4] "timeBodyAccMean-Y"                "timeBodyAccMean-Z"                "timeBodyAccStd-X"                
+ [7] "timeBodyAccStd-Y"                 "timeBodyAccStd-Z"                 "timeGravityAccMean-X"            
+[10] "timeGravityAccMean-Y"             "timeGravityAccMean-Z"             "timeGravityAccStd-X"             
+[13] "timeGravityAccStd-Y"              "timeGravityAccStd-Z"              "timeBodyAccJerkMean-X"           
+[16] "timeBodyAccJerkMean-Y"            "timeBodyAccJerkMean-Z"            "timeBodyAccJerkStd-X"            
+[19] "timeBodyAccJerkStd-Y"             "timeBodyAccJerkStd-Z"             "timeBodyGyroMean-X"              
+[22] "timeBodyGyroMean-Y"               "timeBodyGyroMean-Z"               "timeBodyGyroStd-X"               
+[25] "timeBodyGyroStd-Y"                "timeBodyGyroStd-Z"                "timeBodyGyroJerkMean-X"          
+[28] "timeBodyGyroJerkMean-Y"           "timeBodyGyroJerkMean-Z"           "timeBodyGyroJerkStd-X"           
+[31] "timeBodyGyroJerkStd-Y"            "timeBodyGyroJerkStd-Z"            "timeBodyAccMagMean"              
+[34] "timeBodyAccMagStd"                "timeGravityAccMagMean"            "timeGravityAccMagStd"            
+[37] "timeBodyAccJerkMagMean"           "timeBodyAccJerkMagStd"            "timeBodyGyroMagMean"             
+[40] "timeBodyGyroMagStd"               "timeBodyGyroJerkMagMean"          "timeBodyGyroJerkMagStd"          
+[43] "frequenceBodyAccMean-X"           "frequenceBodyAccMean-Y"           "frequenceBodyAccMean-Z"          
+[46] "frequenceBodyAccStd-X"            "frequenceBodyAccStd-Y"            "frequenceBodyAccStd-Z"           
+[49] "frequenceBodyAccJerkMean-X"       "frequenceBodyAccJerkMean-Y"       "frequenceBodyAccJerkMean-Z"      
+[52] "frequenceBodyAccJerkStd-X"        "frequenceBodyAccJerkStd-Y"        "frequenceBodyAccJerkStd-Z"       
+[55] "frequenceBodyGyroMean-X"          "frequenceBodyGyroMean-Y"          "frequenceBodyGyroMean-Z"         
+[58] "frequenceBodyGyroStd-X"           "frequenceBodyGyroStd-Y"           "frequenceBodyGyroStd-Z"          
+[61] "frequenceBodyAccMagMean"          "frequenceBodyAccMagStd"           "frequenceBodyBodyAccJerkMagMean" 
+[64] "frequenceBodyBodyAccJerkMagStd"   "frequenceBodyBodyGyroMagMean"     "frequenceBodyBodyGyroMagStd"     
+[67] "frequenceBodyBodyGyroJerkMagMean" "frequenceBodyBodyGyroJerkMagStd"
 ```
 
 ## Step 5 -- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
