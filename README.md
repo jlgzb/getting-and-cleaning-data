@@ -44,3 +44,6 @@
 + run_analysis.R -- the script of this project
 + codebook.md -- Markdown
 
+## Notes:
+-- Features : are normalized and bounded with in [-1, 1].
+
