@@ -33,10 +33,10 @@
 
 ## The descriptions of generated data files in our repo
 
-* (Done step1) df_full.txt -- the merged data, dim = (10299, 563)
-* (Done step2) df_mean_sd.txt -- extractes mean and standard deviation for each measrement, dim = (10299, 68)
-* (Done step3) df_named_activity.txt -- dim = (10299, 68)
-* (Done step4) df_with_descriptive_variable_names.txt -- dim = (10299, 68)
+* df_full.txt -- the merged data, dim = (10299, 563)
+* df_mean_sd.txt -- extractes mean and standard deviation for each measrement, dim = (10299, 68)
+* df_named_activity.txt -- dim = (10299, 68)
+*(Done step4) df_with_descriptive_variable_names.txt -- dim = (10299, 68)
 * (Done step5) df_tidy.txt -- final tidy data, dim = (180, 70), of which, columns from 5 to 70 are the features
 
 ## The scripts and codebook file
