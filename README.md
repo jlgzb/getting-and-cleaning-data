@@ -1,4 +1,4 @@
-# Getting-and-cleaning-data -- Coursera
+# Getting-and-cleaning-data -- Coursera project
 
 ## Description of project
 
