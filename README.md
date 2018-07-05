@@ -7,11 +7,11 @@
 ## acitvity:
   Each row indicate the unique activity name.
   the concrete activity names:
-    ### WALKING
-    ### WALKING_UPSTAIRS
-    ### WALKING_DOWNSTAIRS
-    ### SITTING
-    ### STANDING
-    ### LAYING
+    * item WALKING
+    * WALKING_UPSTAIRS
+    * WALKING_DOWNSTAIRS
+    * SITTING
+    * STANDING
+    * LAYING
   
 ## 
