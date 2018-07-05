@@ -1,7 +1,7 @@
 # Code book
 
 
-## 1. Download the original data -- UCI HAR Dataset
+## Step 0 -- Download the original data -- UCI HAR Dataset
 * The full description of the original data:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 * The URL for downloading the UCI HAR dataset:
