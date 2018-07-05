@@ -69,7 +69,7 @@ rm(df_feature_index)
 # read activity names (10299)
 df_activity_name <- read.table("./data/UCI HAR Dataset/activity_labels.txt")
 
-# replace df_mean_sd$activity_label with activity names
+# replace df_mean_sd$activity with activity names
 df_mean_sd$activity <- factor(df_mean_sd$activity, 
                               levels = df_activity_name[, 1],
                               labels = df_activity_name[, 2])
