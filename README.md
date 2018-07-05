@@ -1,4 +1,4 @@
-# Getting-and-cleaning-data
+# Getting-and-cleaning-data -- coursera online
 
 ## Description of project
 
@@ -41,6 +41,6 @@
 
 ## The scripts and codebook file
 
-+ run_analysis.R
-+ codebook.md
++ run_analysis.R -- the script of this project
++ codebook.md -- Markdown
 
