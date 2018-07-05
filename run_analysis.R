@@ -91,7 +91,7 @@ write.table(df_mean_sd, "./data/df_with_descriptive_variable_names.txt", row.nam
 ## tidy data set with the average of each activity and each subject #################
 
 df_group <- df_mean_sd %>% 
-    group_by(df_mean_sd$subject, df_mean_sd$activity) %>%
+    group_by(subject = df_mean_sd$subject, activity = df_mean_sd$activity) %>%
     summarise_each(funs(mean))
 
 write.table(df_group, "./data/df_tidy.txt", row.names = FALSE)
