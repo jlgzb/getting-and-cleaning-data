@@ -6,12 +6,12 @@ Variable name    | Description
 -----------------|------------
 subject          | ID for each window sample. Range is from 1 to 30.
 activity         | Activity name. Each row indicate the unique activity name
-* WALKING
-* WALKING_UPSTAIRS
-* WALKING_DOWNSTAIRS
-* SITTING
-* STANDING
-* LAYING
+|* WALKING
+|* WALKING_UPSTAIRS
+|* WALKING_DOWNSTAIRS
+|* SITTING
+|* STANDING
+|* LAYING
 ------------------------------
 featDomain       | Feature: Time domain signal or frequency domain signal (Time or Freq)
 featInstrument   | Feature: Measuring instrument (Accelerometer or Gyroscope)
