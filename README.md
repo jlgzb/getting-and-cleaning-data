@@ -1,4 +1,4 @@
-# getting-and-cleaning-data
+# Getting-and-cleaning-data
 
 ## Description of project
 -------------------------
@@ -30,12 +30,14 @@
 * Step 4 Appropriately labels the data set with descriptive variable names -- df_with_descriptive_variable_names.txt
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject --df_tidy.txt
 
-## The descriptions of outputs in our repo
+## The descriptions of generated data files in our repo
 * df_full.txt -- the merged data, dim = (10299, 563)
 * df_mean_sd.txt -- extractes mean and standard deviation for each measrement, dim = (10299, 68)
 * df_named_activity.txt -- dim = (10299, 68)
 * df_with_descriptive_variable_names.txt -- dim = (10299, 68)
 * df_tidy.txt -- final tidy data, dim = (180, 70), of which, columns from 5 to 70 are the features
 
-## Reference
-* Codebook file -- codebook.md
+## The scripts and codebook file
++ run_analysis.R
++ codebook.md
+
