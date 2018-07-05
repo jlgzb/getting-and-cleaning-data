@@ -24,6 +24,7 @@
 > Good luck!
 
 ## The demands of this project and the generated data file of each step
+---------------------------------------------------------------------------
 * Step 1 Merges the training and the test sets to create one data set -- df_full.txt
 * Step 2 Extracts only the measurements on the mean and standard deviation for each measurement -- df_mean_sd.txt
 * Step 3 Uses descriptive activity names to name the activities in the data set -- df_named_activity.txt
@@ -31,6 +32,7 @@
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject --df_tidy.txt
 
 ## The descriptions of generated data files in our repo
+----------------------------------------------------------------------------
 * df_full.txt -- the merged data, dim = (10299, 563)
 * df_mean_sd.txt -- extractes mean and standard deviation for each measrement, dim = (10299, 68)
 * df_named_activity.txt -- dim = (10299, 68)
@@ -38,6 +40,7 @@
 * df_tidy.txt -- final tidy data, dim = (180, 70), of which, columns from 5 to 70 are the features
 
 ## The scripts and codebook file
+-----------------------------------------------------------------------------
 + run_analysis.R
 + codebook.md
 
