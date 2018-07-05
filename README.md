@@ -45,5 +45,5 @@
 + codebook.md -- Markdown
 
 ## Notes:
--- Features : are normalized and bounded with in [-1, 1].
+* Features : are normalized and bounded with in [-1, 1].
 
