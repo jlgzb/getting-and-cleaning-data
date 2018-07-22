@@ -33,7 +33,7 @@
 
 ## The descriptions of generated data files in our repo
 
-* df_full.txt -- the merged data, it is too large, so we do not upload it (64.1M)
+* df_full.txt -- the merged data (64.1M)
 * df_mean_sd.txt -- extractes mean and standard deviation for each measrement, dim = (10299, 68)
 * df_named_activity.txt -- dim = (10299, 68)
 * df_with_descriptive_variable_names.txt -- dim = (10299, 68)
